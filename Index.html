@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Banner interactivo con colores modificados -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="IMG/Diseño sin título.png" alt="Fresas con Chocolate"></a>
+            </div>
+        </header>
+
+        <!-- Menú debajo del banner -->
+        <nav class="navbar">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                <li><a href="pedido.html">Pedidos</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="IMG/Fresas-con-Chocolate-en-Air-Fryer-1200x900.jpg" alt="Fresa 1" width="500" height="500">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/fresas-con-chocolate-decoradas-paulina-cocina-recetas.jpg" alt="Fresa 2" width="500" height="500">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/plato.jpg" alt="Fresa 3" width="500" height="500">
+                    </div>
+                </div>
+                <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+                <span class="next" onclick="moveSlide(1)">&#10095;</span>
+            </div>
+        </section>
+        <section class="container">
+            <div class="titulo">
+                <h2>Nuestros Productos Populares</h2>
+            </div>
+
+            <!-- Sección de Productos Destacados -->
+            <section class="container-productos" id="productos">
+                <div class="card">
+                    <img src="IMG/a3d437a6e461efc495a63a0cc35cdd00.png" alt="Fresas con Chocolate" height="400" width="200">
+                    <h5 class="card-title">Fresas con Chocolate</h5>
+                </div>
+
+                <div class="card">
+                    <img src="IMG/helado-fresa.jpg" alt="Helado de Fresa"  height="200" width="200">
+                    <h5 class="card-title">Helado de Fresa</h5>
+                </div>
+
+                <div class="card">
+                    <img src="IMG/helado.jpg" alt="Helado de Chocolate" height="300" width="200">
+                    <h5 class="card-title">Helado de Chocolate</h5>
+                </div>
+
+                <div class="card">
+                    <img src="IMG/images.jpg" alt="Malteada de Fresa" height="200" width="200">
+                    <h5 class="card-title">Malteada de Fresa</h5>
+                </div>
+
+                <div class="card">
+                    <img src="IMG/paleta.jpg" alt="Paletas" height="200px" width="200px">
+                    <h5 class="card-title">Paletas</h5>
+                </div>
+
+                <div class="card">
+                    <img src="IMG/torta-fresa-chocolate.jpg" alt="Torta de Fresa con Chocolate" height="200px" width="200px">
+                    <h5 class="card-title">Torta de Fresa con Chocolate</h5>
+                </div>
+            </section>
+        </section>
+
+    <script src="JS/carrusel.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,263 @@
+body {
+    background-color:rgb(255, 187, 198);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+/* Navegación */
+.navbar {
+    background-color:rgb(255, 161, 198);
+    box-shadow: rgb(197, 64, 153) 0px 4px 8px;
+    z-index: 1020;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* overflow: hidden; */
+
+    position: sticky;
+    /* Fija el navbar */
+    top: 0;
+    /* Posición en la parte superior */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    padding: 21px 15px;
+}
+
+.navbar a:hover {
+    color: #fc5ad3;
+    background-color: #000000;
+}
+
+
+
+/* Menú producto desplegable*/
+
+.nav li a {
+    display: block;
+}
+
+
+.nav li ul {
+    display: none;
+    background-color: #f8f9fa;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+
+/* Slider */
+.slider-container {
+    width: 70%;
+    height: calc(100vh-190px);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: calc(100vh - 190px);
+    display: block;
+}
+
+/* Controles del slider */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Sección de Productos */
+.container-productos {
+    display: grid;
+    margin: 20px;
+    height: calc(100vh - 180px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.container-pedido {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.container-form {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #b71c1c;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #b71c1c;
+}
+
+/* Footer */
+footer {
+    background-color: #b71c1c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #b71c1c;
+    width: 70%;
+}
+
+footer h4,
+footer p,
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ffba2a;
+}
+
+/* Contenedor de títulos */
+.titulo {
+    background-color: #ff61d8;
+    height: 140px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.titulo h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Relleno interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    /* Tamaño del texto */
+    cursor: pointer;
+    /* Cambiar el cursor a un dedo apuntando */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease;
+    /* Transición suave al cambiar el color */
+}
+
+.button:hover {
+    background-color: #45a049;
+    /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para el input de número */
+.number {
+    width: 100px;
+    /* Ancho fijo */
+    padding: 8px 10px;
+    /* Relleno interno */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    border: 2px solid #ccc;
+    /* Borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle profundidad */
+    transition: border-color 0.3s ease;
+    /* Transición suave del color del borde */
+}
+
+.number:focus {
+    border-color: #4CAF50;
+    /* Cambia el color del borde al enfocar */
+    outline: none;
+    /* Elimina el borde azul predeterminado */
+}
+
